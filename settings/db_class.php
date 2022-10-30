@@ -18,7 +18,7 @@ class db_connection
 	*@return bolean
 	**/
 	function db_connect(){
-		$this->db = mysqli_connect(SERVER,USERNAME,PASSWORD,DATABASE);
+		$this->db = mysqli_connect("us-cdbr-east-06.cleardb.net","b9cd28c7abc157","d5fb23f2","heroku_0486fd9877d15e7");
 		if (mysqli_connect_errno()) {
 			return false;
 		}else{
