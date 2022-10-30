@@ -1,6 +1,6 @@
 <?php
 
-require("../functions/productdisplayprocess.php");
+require("./functions/productdisplayprocess.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -11,7 +11,7 @@ require("../functions/productdisplayprocess.php");
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
 
     <title>Shopping</title>
   </head>
@@ -41,7 +41,7 @@ require("../functions/productdisplayprocess.php");
                 <p class="card-text">Ghc <?= $values[6]; ?></p>
                   <p class="card-text"><?= $values[3]; ?></p>
                 <a href="product.php?pid=<?= $key; ?>" class="btn btn-primary">View Product</a>
-                <a href="<?php echo '../functions/cartaddprocess.php?pid='.$key.'&ipadd='.$ipadd.'&cid='.$cid.'&qty='.$qty ?>" class="btn btn-primary" class="btn btn-primary">Add to Cart</a>
+                <a href="<?php echo './functions/cartaddprocess.php?pid='.$key.'&ipadd='.$ipadd.'&cid='.$cid.'&qty='.$qty ?>" class="btn btn-primary" class="btn btn-primary">Add to Cart</a>
               </div>
               </div>
         </div>
