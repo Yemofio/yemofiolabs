@@ -16,7 +16,7 @@ require("./functions/productdisplayprocess.php");
     <title>Shopping</title>
   </head>
   <body>
-      <?php include("inc/navbar.php");
+      <?php include("./inc/navbar.php");
         $ipadd = getRealIpAddr();
         if(isset($_SESSION['customer_id'])){ $cid = $_SESSION['customer_id']; }
         else{$cid = null;}
